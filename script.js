@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         noCount++;
 
         if (noCount >= 5) {
-            alert('Why are you trying to reject me Baby?');
+            alert('Why are you trying to reject me Jaan?');
             noBtn.style.display = 'none';
             return;
         }
