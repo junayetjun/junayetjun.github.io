@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let noCount = 0;
 
-    // Move No button on mouse enter
-    noBtn.addEventListener('mouseenter', () => {
+    const moveNoButton = () => {
         noCount++;
 
         if (noCount >= 5) {
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const margin = 50; // Keep away from edges
+        const margin = 50;
         const maxX = window.innerWidth - noBtn.offsetWidth - margin;
         const maxY = window.innerHeight - noBtn.offsetHeight - margin;
 
@@ -27,6 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
         noBtn.style.left = `${x}px`;
         noBtn.style.top = `${y}px`;
         noBtn.style.zIndex = '1000';
+    };
+
+    // Move No button on mouse enter (Desktop)
+    noBtn.addEventListener('mouseenter', moveNoButton);
+
+    // Move No button on touch start (Mobile) - prevents clicking/touching
+    noBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // Prevent accidental click after touch
+        moveNoButton();
     });
 
     // Handle Yes button click

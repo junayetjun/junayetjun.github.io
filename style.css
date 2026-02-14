@@ -173,3 +173,43 @@ body {
         opacity: 0;
     }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    .photo-container {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .question {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        min-height: 150px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+
+    .no {
+        position: relative;
+        right: auto;
+    }
+
+    .message {
+        font-size: 1.8rem;
+    }
+}
