@@ -1,0 +1,21 @@
+{
+  "name": "junayet-developer-portfolio",
+  "version": "2.0.0",
+  "description": "Advanced interactive developer portfolio for Samim Junayet Istiaq (junayetjun)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "full-stack",
+    "flutter",
+    "spring-boot",
+    "angular",
+    "interactive"
+  ],
+  "author": "Samim Junayet Istiaq (junayetjun)",
+  "license": "MIT"
+}
